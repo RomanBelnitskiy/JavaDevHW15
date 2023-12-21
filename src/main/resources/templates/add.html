@@ -28,6 +28,9 @@
           "
           novalidate
         >
+          <input type="hidden"
+                 th:name="${_csrf.parameterName}"
+                 th:value="${_csrf.token}" />
           <div class="mb-3">
             <label for="titleInput" name="id" class="form-label">Title</label>
             <input

@@ -28,6 +28,9 @@
             border-radius: 20px;
           "
         >
+          <input type="hidden"
+                 th:name="${_csrf.parameterName}"
+                 th:value="${_csrf.token}" />
           <input type="text" th:field="*{id}" hidden />
           <div class="mb-3">
             <label for="titleInput" class="form-label">Title</label>

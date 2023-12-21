@@ -48,6 +48,9 @@
                   method="post"
                   style="display: inline-block"
                 >
+                  <input type="hidden"
+                         th:name="${_csrf.parameterName}"
+                         th:value="${_csrf.token}" />
                   <input name="id" th:value="${note.id}" hidden />
                   <button role="button" type="submit" class="btn btn-danger">
                     Delete
